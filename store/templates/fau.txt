@@ -1,0 +1,13 @@
+user luis                       
+pasword 1234
+correo luis@lemon.com
+
+customers
+mario
+alpha1234
+meduso@limon.com
+
+
+luis
+luis
+luis@limon.com
