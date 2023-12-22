@@ -1,3 +1,4 @@
+
 {
   "version": 2,
   "builds": [
@@ -10,7 +11,7 @@
       "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "staticfiles_build"
+        "distDir": "ui/staticfiles"
       }
     }
   ],
@@ -21,7 +22,8 @@
     },
     {
       "src": "/(.*)",
-      "dest": "ecommercewsgi.py"
+      "dest": "ecommerce/wsgi.py"
     }
-  ]
+  ],
+  "outputDirectory": "ui/staticfiles"
 }
