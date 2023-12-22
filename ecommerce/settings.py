@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-6k*9to4cslv-%139=-k8!$e9*(toer989-(lyks8=mf2!tl_u9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 #ALLOWED_HOSTS = ["animate-production.up.railway.app"]
 
 
@@ -150,6 +150,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 MEDIA_URL = '/images/'
-
 MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 
