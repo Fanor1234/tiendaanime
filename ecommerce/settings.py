@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.environ.get("DB_NAME"),
@@ -89,6 +89,17 @@ DATABASES = {
         'PASSWORD': os.environ.get("DB_PASSWORD"),
         'HOST': os.environ.get("DB_HOST"),
         'PORT': os.environ.get("DB_PORT"),
+    }
+}"""
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'animate',
+        'USER': 'postgres',
+        'PASSWORD': 'faupos123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
