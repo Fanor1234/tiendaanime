@@ -92,16 +92,6 @@ DATABASES = {
     }
 }
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'animate',
-        'USER': 'postgres',
-        'PASSWORD': 'faupos123',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}"""
 
 
 """DATABASES = {
