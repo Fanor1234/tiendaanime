@@ -1,3 +1,2 @@
-/Pipfile
-/pasosrailway.txt
-/ecommerce/.env
+*.env
+*.sqlite3
