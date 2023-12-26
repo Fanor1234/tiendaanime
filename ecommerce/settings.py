@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
@@ -92,6 +92,14 @@ DATABASES = {
 }
 
 DATABASES['default'] = dj_database_url.config()
+"""
+DATABASES = {
+    'default': dj_database_url.parse(
+        os.environ.get("DATABASE_URL"),
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
 
 
 # Password validation
